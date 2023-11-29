@@ -5,6 +5,7 @@ img = cv.imread('Resources/Photos/cat_large.jpg')
 
 
 def rescaleFrame(frame, scale = 0.75):
+    # Este metodo va a funcionar para Imagenes, Video and Live Video
     width = int(frame.shape[1] * scale )
     heigth = int(frame.shape[0] * scale )
     dimensions = (width,heigth)
@@ -14,7 +15,14 @@ def rescaleFrame(frame, scale = 0.75):
 resized_image = rescaleFrame(img)
 cv.imshow('Cal', resized_image)
 
-# capture = cv.VideoCapture('Resources/Videos/dog.mp4')
+
+capture = cv.VideoCapture('Resources/Videos/dog.mp4')
+
+def changeRes(width, height):
+    # Este metodo funcionara solo para Live Video
+    capture.set(3,width)
+    capture.set(4,height)
+
 
 # while True:
 #     isTrue, frame = capture.read()
