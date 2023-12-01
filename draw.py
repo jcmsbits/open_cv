@@ -35,12 +35,12 @@ cv.imshow('Circle',blank)
 # cv.line(blank,(0,0),(blank.shape[1]//2, blank.shape[0]//2), (255,255,255),thickness=2)
 # cv.imshow('Linea',blank)
 
-# cv.line(blank,(100,250),(300,400),(255,255,255),thickness=1)
+cv.line(blank,(100,250),(300,400),(255,255,255),thickness=6)
 # cv.imshow('Otra Linea',blank)
 
 # Escribir texto
 
-cv.putText(blank, 'Prueba de texto', (0,255), cv.FONT_HERSHEY_TRIPLEX, 1.3, (0,255,255), thickness=1, lineType=1)
+cv.putText(blank, 'Prueba de texto', (0,265), cv.FONT_HERSHEY_TRIPLEX, 0.6, (0,255,255), thickness=1, lineType=1)
 cv.imshow('Texto', blank)
 
 cv.waitKey(0)
