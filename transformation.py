@@ -30,6 +30,7 @@ cv.imshow('Imagen trasladada',translated_img)
 def rotate(img, angle, rotPoint=None):
     (height, width) = img.shape[:2]
     
+    # rotPoint es el Eje o punto desde el cual se va a rotar
     if rotPoint is None:
         rotPoint = (width//2,height//2)
     
