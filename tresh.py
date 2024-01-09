@@ -30,7 +30,7 @@ cv.imshow('Inversa Binaria', tresh_inv)
 #                                       11,9)
 adaptive_tresh = cv.adaptiveThreshold(gray,255, 
                                       cv.ADAPTIVE_THRESH_GAUSSIAN_C,cv.THRESH_BINARY_INV,
-                                      11,9)
+                                      3,3)
 
 cv.imshow('Adaptative Tresholding', adaptive_tresh)
 
